@@ -1,0 +1,43 @@
+.box-d {
+    /*border: 1px solid red;*/
+}
+
+.box-d-1 {
+    width: 100%;
+    border: 1px solid blue;
+    margin: 10px;
+}
+.box-d-1 {
+
+}
+.box-d-2 {
+
+}
+.box-d-3 {
+
+ }
+.box-r-1 {
+
+}
+.box-r-2 {
+
+}
+.box-r-3 {
+
+}
+.box-r {
+
+}
+.masonry-fg {
+    display: flex;
+}
+.item-fg {
+    display: inline-block;
+    min-height: 260px;
+    border: solid 1px #D6D6D6;
+    padding: 1em;
+    margin: 10px;
+    width: 100%;
+    box-sizing: border-box;
+
+}
