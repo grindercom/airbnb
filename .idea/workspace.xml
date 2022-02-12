@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eb0f048b-1551-4f38-8a4c-75f23ef633c8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.angular/cache/13.2.3/angular-webpack/156f6136718553c12eb09ce1cfe09d555527efb0/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/13.2.3/angular-webpack/156f6136718553c12eb09ce1cfe09d555527efb0/0.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/13.2.3/angular-webpack/156f6136718553c12eb09ce1cfe09d555527efb0/1.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/13.2.3/angular-webpack/156f6136718553c12eb09ce1cfe09d555527efb0/1.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/13.2.3/angular-webpack/156f6136718553c12eb09ce1cfe09d555527efb0/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/13.2.3/angular-webpack/156f6136718553c12eb09ce1cfe09d555527efb0/index.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/13.2.3/angular-webpack/156f6136718553c12eb09ce1cfe09d555527efb0/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/13.2.3/angular-webpack/156f6136718553c12eb09ce1cfe09d555527efb0/index.pack.old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.scss" afterDir="false" />
-    </list>
+    <list default="true" id="eb0f048b-1551-4f38-8a4c-75f23ef633c8" name="Default Changelist" comment="/" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,6 +45,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="/" />
+    <option name="LAST_COMMIT_MESSAGE" value="/" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1207" y="274" key="FileChooserDialogImpl" timestamp="1644704894839">
