@@ -1,1 +1,28 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 20px;
+  position: relative;
+  color: #222222;
+  //outline: solid 1px #eee;
+}
+
+
+
+.fs-22 {
+  font-size:22px;
+  line-height:26px;
+}
+.fs-16{
+  font-size:16px;
+  line-height:20px;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.fw-700 {
+  font-weight: 700;
+}

@@ -74,7 +74,7 @@
     display:block;
     width:103px ;
     height:80px;
-    background: url(image/Airbnb_logo.svg) left center no-repeat;
+    background: url(../src/assets/Airbnb_logo.svg) left center no-repeat;
 }
 .block-btn-search {
     position: absolute;
@@ -672,5 +672,4 @@ footer {
 .footer-b3-btn:hover {
     text-decoration: underline;
     cursor: pointer;
-
 }

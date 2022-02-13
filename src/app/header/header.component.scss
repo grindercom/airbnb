@@ -15,7 +15,7 @@ header {
   display:block;
   width:103px ;
   height:5.75rem;
-  background: url("/assets/Airbnb_logo.svg") left center no-repeat;
+  background: url("../../assets/Airbnb_logo.svg") left center no-repeat;
 }
 .header--absolute--btn__search {
   position: absolute;
@@ -56,7 +56,7 @@ header {
   width: 33px;
   height: 33px;
   border-radius: 50%;
-  background: #ff385c url("/assets/search.svg")center center no-repeat;
+  background: #ff385c url("../../assets/search.svg")center center no-repeat;
 }
 .btn__search:hover {
   box-shadow: #cecece 2px 2px 5px;
@@ -76,11 +76,11 @@ header {
   width: 48px;
   height: 48px;
   border-radius: 24px;
-  background:url("/assets/globe.svg") center center no-repeat;
+  background:url("../../assets/globe.svg") center center no-repeat;
   border:0;
 }
 .btn-language:hover {
-  background:#eeeeee url("/assets/globe.svg") center center no-repeat;
+  background:#eeeeee url("../../assets/globe.svg") center center no-repeat;
 }
 .btn-sing-in {
   width: 100px;
@@ -103,7 +103,7 @@ header {
   width: 40px;
   height: 40px;
   border-radius: 24px;
-  background:url("/assets/justify.svg")center center no-repeat;
+  background:url("../../assets/justify.svg")center center no-repeat;
 }
 .btn-sing-in:after {
   content:"";
@@ -115,7 +115,7 @@ header {
   width: 34px;
   height: 34px;
   border-radius: 24px;
-  background:url("/assets/avatar.svg")center center no-repeat;
+  background:url("../../assets/avatar.svg")center center no-repeat;
 }
 /*========================================   Registration and Login menu    ======================================== */
 .block-sing-in {
@@ -152,3 +152,4 @@ header {
 .block-sing-in li a:hover {
   color: black;
 }
+
