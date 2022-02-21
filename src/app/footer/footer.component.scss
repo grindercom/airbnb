@@ -1,4 +1,22 @@
 @import "src/assets/Scss/Mixin__styles";
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1000px,
+  xxl: 1400px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1000px,
+  xxl: 1320px
+);
+
 footer {
   width: 100%;
   position: relative;

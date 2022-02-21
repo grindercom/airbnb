@@ -1,0 +1,30 @@
+@import "src/assets/Scss/Mixin__styles";
+
+.master:before, .repost:before, .save:before  {
+  content:"";
+  width: 13px;
+  height: 13px;
+  margin: 0 5px -2px 0;
+  display: inline-block;
+  background:white center center no-repeat;
+}
+//.master:before {
+//  background:url("image/patch-check.svg");
+//}
+//.repost:before {
+//  background:url("image/download.svg");
+//}
+//.save:before {
+//  background:url("image/heart.svg");
+//}
+.repost, .save {
+  padding: 5px 10px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.repost:hover, .save:hover {
+  background-color:#eeeeee ;
+}
+.block-place-of-apartments_light {
+  display:none;
+}
