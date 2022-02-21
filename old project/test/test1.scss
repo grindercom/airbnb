@@ -1,27 +1,40 @@
-@import "node_modules/bootstrap/dist/css/bootstrap.min.css";
+//@import "node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "node_modules/bootstrap/scss/functions";
 
 $grid-breakpoints: (
-        xs: 0,
-        sm: 576px,
-        md: 768px,
-        lg: 992px,
-        xl: 1100px,
-        xxl: 1400px
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1000px,
+  xxl: 1400px
 );
 
-$container-max-widths: (
-        sm: 540px,
-        md: 720px,
-        lg: 960px,
-        xl: 1100px,
-        xxl: 1320px
-);
+// 2. Включите сюда любые переопределения переменных по умолчанию
 
+// 3. Включите оставшуюся часть необходимых таблиц стилей Bootstrap
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/root";
+
+// 4. Включите любой необязательный Bootstrap CSS по мере необходимости
+@import "node_modules/bootstrap/scss/utilities";
+@import "node_modules/bootstrap/scss/reboot";
+@import "node_modules/bootstrap/scss/type";
+@import "node_modules/bootstrap/scss/images";
+@import "node_modules/bootstrap/scss/containers";
+@import "node_modules/bootstrap/scss/grid";
+@import "node_modules/bootstrap/scss/helpers";
+
+// 5. При желании можно в последнюю очередь включить служебный API для генерации классов на основе карты Sass в `_utililies.scss`
+@import "node_modules/bootstrap/scss/utilities/api";
+
+// 6. Добавьте сюда дополнительный пользовательский код
 
 .box {
   font-size: 20px;
   text-align: center;
   height: 80px;
   border: 2px solid black;
-  background-color: aquamarine;
+  background-color: aquamarine !important;
 }
