@@ -1,0 +1,27 @@
+@media (max-width: 90rem) {
+  .header__content_logo {
+    width: 2.25rem;
+  }
+}
+@media (max-width: 80rem) {
+  .header__content, .footer {
+    padding: 0 2.85rem;
+  }
+}
+@media (max-width: 65rem) {
+  .header__btn_search {
+    left: 0;
+    margin-left: 7rem;
+  }
+}
+@media (max-width: 50rem) {
+  .header, .block-fly-header, .block-fly {
+    display: none;
+  }
+
+  .min__header {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=Media__breakpoints.css.map */

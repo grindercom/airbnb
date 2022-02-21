@@ -1,0 +1,16 @@
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "src/assets/Scss/Mixin__styles";
+@import "src/assets/Scss/Сommon__styles";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 20px;
+  position: relative;
+  color: #222222;
+  /*outline: solid 1px #eee;*/
+}
+
+
+

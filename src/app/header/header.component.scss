@@ -1,0 +1,138 @@
+@import "src/assets/Scss/Mixin__styles";
+.header {
+  width: 100%;
+  height:5.75rem ;
+  box-shadow: #f5f5f5 0.2rem 0.2rem 0.5rem;
+}
+.subheader {
+  width: 100%;
+  position: relative;
+}
+.header__content {
+  width: 100%;
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 0 5.75rem;
+  position: relative;
+}
+.header__content_logo {
+  display:block;
+  width:7.5rem;
+  height:5.75rem;
+  background: url(../../assets/Image/Airbnb_logo.svg) left center no-repeat;
+}
+.header__btn_search {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top:-1.7rem;
+  margin-left:-11.2rem;
+  cursor: pointer;
+  z-index: 10;
+
+  .btn_search {
+    width:21.4rem;
+    height:3.4rem;
+    border-radius:1.75rem;
+    border:1px solid $br_color;
+    position: relative;
+    box-shadow: $br_color 0.1rem 0.1rem 0.2rem;
+    cursor: pointer;
+
+    &:before {
+      @include img_before(0,0,0.9rem 0 0 1.75rem,auto,auto);
+      content:"Начать поиск";
+      position: absolute;
+    }
+    &:after {
+      @include img_after(0,0,0.4rem 0.4rem 0 0,2.5rem,2.5rem);
+      border-radius: 50%;
+      position: absolute;
+      background: #ff385c url("../../assets/Image/search.svg")center center no-repeat;
+    }
+    &:hover {
+      box-shadow: #c2c2c2 0.1rem 0.1rem 0.4rem;
+    }
+  }
+}
+.header__btn_client {
+  background:white;
+  border:0;
+  height: 3.4rem;
+  border-radius: 1.75rem;
+  padding: 0 1rem;
+
+  &:hover {
+    background:$bc_color;
+  }
+}
+.header__btn_language {
+  width: 3.4rem;
+  height: 3.4rem;
+  border-radius: 1.75rem;
+  background-color:white;
+  border:0;
+  &:before {
+    @include img_before(0,0,0.2rem 0 0 0,3rem,3rem);
+    background:url("../../assets/Image/globe.svg") center center no-repeat;
+  }
+  &:hover {
+    background:$bc_color url("../../assets/Image/globe.svg") center center no-repeat;
+  }
+}
+.header__btn_sing-in {
+  width: 6.5rem;
+  height: 3.4rem;
+  border-radius: 1.75rem;
+  border:1px solid $br_color;
+  position: relative;
+  background-color:white;
+
+  &:hover {
+    box-shadow: $br_color 0.1rem 0.1rem 0.4rem;
+  }
+  &:before {
+    @include img_before(0,0,0.4rem 0 0 0.4rem,2.5rem,2.5rem);
+    border-radius: 1.75rem;
+    background:url("../../assets/Image/justify.svg")center center no-repeat;
+  }
+  &:after {
+    @include img_after(0,0,0.4rem 0.4rem 0 0,2.5rem,2.5rem);
+    border-radius: 1.75rem;
+    background:url("../../assets/Image/avatar.svg")center center no-repeat;
+  }
+}
+//=========================== Style Block Min__Header ===========================
+.min__header {
+  width: 100%;
+  height: 4rem;
+  display: none;
+  padding-top:1rem ;
+}
+.min__header_repost {
+  width: 2.2rem;
+  height: 2.2rem;
+  &:before {
+  @include img_before(0,0,0.5rem 0 0 0.5rem,1.2rem,1.2rem);
+  background:url("../../assets/Image/repost.svg")center center no-repeat;
+  }
+  &:hover {
+    border-radius: 50%;
+    background:$bc_color url("../../assets/Image/repost.svg")center center no-repeat;
+  }
+}
+.min__header_save {
+  width: 2.2rem;
+  height: 2.2rem;
+
+  &:before {
+  @include img_before(0,0,0.5rem 0 0 0.5rem,1.2rem,1.2rem);
+  background:url("../../assets/Image/heart.svg")center center no-repeat;
+  }
+  &:hover {
+    border-radius: 50%;
+    background:$bc_color url("../../assets/Image/heart.svg")center center no-repeat;
+  }
+}
+@import "src/assets/Scss/Media__breakpoints";
+

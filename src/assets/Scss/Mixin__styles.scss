@@ -1,0 +1,34 @@
+$br_color: #d0d0d0;
+$bc_color: #f7f7f7;
+@mixin external_parameters  {
+
+}
+
+@mixin img_before ($img_top, $img_left, $img_margin, $img_width, $img_height) {
+  content:"";
+  display:inline-block;
+  top:$img_top;
+  left:$img_left;
+  margin:$img_margin;
+  width:$img_width;
+  height:$img_height;
+}
+@mixin img_after ($img_top, $img_right, $img_margin, $img_width, $img_height) {
+  content:"";
+  display:inline-block;
+  top:$img_top;
+  right:$img_right;
+  margin:$img_margin;
+  width:$img_width;
+  height:$img_height;
+}
+.dot:before {
+  @include img_before(0,0,0 0 -0.3rem 0,1.1rem,1.1rem);
+  background:url("../../assets/Image/dot.svg") center center no-repeat;
+}
+.arrow-left:before {
+  @include img_before(0,0,0 0 -0.2rem 0,1.1rem,1.1rem);
+  background:url("../../assets/Image/arrow-left.svg") center center no-repeat;
+}
+
+

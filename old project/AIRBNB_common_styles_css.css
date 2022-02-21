@@ -1,0 +1,98 @@
+/*Общие стили для сайта*/
+.fs-10 {
+    font-size:10px;!important;
+    line-height:12px;!important;
+}
+.fs-12 {
+    font-size:12px;!important;
+    line-height:16px;!important;
+}
+.fs-14 {
+    font-size:14px;!important;
+    line-height:20px;!important;
+}
+.fs-16 {
+    font-size:16px;!important;
+    line-height:20px;!important;
+}
+.fs-16-fw-24 {
+    font-size:16px;!important;
+    line-height:24px;!important;
+}
+.fs-22 {
+    font-size:22px;!important;
+    line-height:26px;!important;
+}
+.fs-26 {
+    font-size:26px;!important;
+    line-height:30px;!important;
+}
+.fw-600 {
+    font-weight: 600;
+}
+.fw-700 {
+    font-weight: 700;
+}
+.underline {
+    text-decoration: underline;
+}
+.color-light {
+    color: #717171
+}
+.br-t {
+    border-top:1px solid #dddddd;
+}
+.br-b {
+    border-bottom:1px solid #dddddd;
+}
+.arrow-left:before {
+    content:"";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0 1px -3px 0;
+    background:url("image/arrow-left.svg") white center center no-repeat;
+}
+.arrow-right:after {
+    content:"";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0 0 -3px 1px;
+    background:url("image/arrow-right.svg") white center center no-repeat;
+}
+.dot:before {
+    content:"";
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    background:url("image/dot.svg") center center no-repeat;
+    margin-bottom:-2px;
+}
+.star:before {
+    content:"";
+    width: 13px;
+    height: 13px;
+    margin: 0 4px -1px 0;
+    display: inline-block;
+    background:url("image/star.svg") white center center no-repeat;
+}
+.modal-br-r {
+border-radius: 20px;
+}
+.arrow-dawn:before {
+    content:"";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0 0 -4px 1px;
+    background:url("image/arrow-dawn.svg") center center no-repeat;
+}
+.arrow-up:before {
+    content:"";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0 0 -4px 1px;
+    background:url("image/arrow-up.svg") center center no-repeat;
+}

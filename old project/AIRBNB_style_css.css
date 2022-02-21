@@ -1,0 +1,675 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 20px;
+    position: relative;
+    color: #222222;
+    /*outline: solid 1px #eee;*/
+}
+.header {
+    width: 100%;
+    height:80px ;
+    box-shadow: #f5f5f5 2px 2px 5px;
+}
+.header-lv2 {
+    width: 100%;
+    position: relative;
+}
+.header-content {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 80px;
+    position: relative;
+}
+.body-first_bg_col {
+    width: 100%;
+    position: relative;
+    background-color: white;
+    z-index:101 ;
+}
+.body-first {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 80px;
+    position: relative;
+}
+.body-second {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 80px;
+    position: relative;
+}
+/*========================================   Block   MINI - HEADER   ======================================== */
+.mini-header {
+    width: 100%;
+    height: 60px;
+    display: none;
+}
+.mini-repost:before, .mini-save:before {
+    content:"";
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    background: white center center no-repeat;
+}
+.mini-repost:before {
+    margin: 0 0 -1px 0;
+    background:url("image/download.svg");
+}
+.mini-save:before {
+    margin: 0 0 -1px 0;
+    background:url("image/heart.svg");
+}
+.mini-repost:hover, .mini-save:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+/*========================================   Block   HEADER   ======================================== */
+.logo-airbnb {
+    display:block;
+    width:103px ;
+    height:80px;
+    background: url(../src/assets/Airbnb_logo.svg) left center no-repeat;
+}
+.block-btn-search {
+    position: absolute;
+    width: 302px;
+    height: 48px;
+    left: 50%;
+    top: 50%;
+    margin-top:-24px;
+    margin-left:-151px;
+    cursor: pointer;
+    z-index: 10;
+}
+.btn-search {
+    width: 300px;
+    height: 48px;
+    border-radius: 25px;
+    border:1px solid #e2e2e2;
+    position: relative;
+    background-color:white;
+    box-shadow: #dddddd 1px 1px 2px;
+    cursor: pointer;
+}
+.btn-search:before {
+    content:"Начать поиск";
+    display:inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin:12px 0 0 25px;
+}
+.btn-search:after {
+    content:"";
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    right: 0;
+    margin: 6px 6px 0 0;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background: #ff385c url("image/search.svg")center center no-repeat;
+}
+.btn-search:hover {
+    box-shadow: #cecece 2px 2px 5px;
+}
+.btn-client {
+    background:white;
+    border:0;
+    height: 48px;
+    border-radius: 24px;
+    padding: 0 15px;
+}
+.btn-client:hover {
+    background:#eeeeee;
+}
+.btn-language {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    background:white url("image/globe.svg") center center no-repeat;
+    border:0;
+}
+.btn-language:hover {
+    background:#eeeeee url("image/globe.svg") center center no-repeat;
+}
+.btn-sing-in {
+    width: 100px;
+    height: 48px;
+    border-radius: 25px;
+    border:1px solid #e2e2e2;
+    position: relative;
+    background-color:white;
+}
+.btn-sing-in:hover {
+    box-shadow: #cecece 2px 2px 5px;
+}
+.btn-sing-in:before {
+    content:"";
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    margin: 3px 0 0 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 24px;
+    background:white url("image/justify.svg")center center no-repeat;
+}
+.btn-sing-in:after {
+    content:"";
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    right: 0;
+    margin: 6px 6px 0 0;
+    width: 34px;
+    height: 34px;
+    border-radius: 24px;
+    background:white url("image/reddit.svg")center center no-repeat;
+}
+/*========================================   Registration and Login menu    ======================================== */
+.block-sing-in {
+    position: absolute;
+    top: 75px;
+    right: 40px;
+    z-index: 150;
+    background-color: white;
+    border:1px solid #dddddd;
+    border-radius: 15px;
+    box-shadow: 0 0 6px #d9d7d7;
+    padding: 10px 0;
+}
+.block-sing-in ul:first-child {
+    border-bottom:1px solid #dddddd;
+    padding-bottom:10px;
+    margin-bottom: 10px;
+}
+.block-sing-in ul {
+    width: 230px;
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+.block-sing-in a {
+    color: black;
+    display: inline-block;
+    text-decoration:none;
+    padding: 10px 0 10px 20px;
+}
+.block-sing-in li:hover {
+    background-color: #f7f7f7;
+}
+.block-sing-in li a:hover {
+    color: black;
+}
+/*========================================   Block place of apartments    ======================================== */
+
+.master:before, .repost:before, .save:before  {
+    content:"";
+    width: 13px;
+    height: 13px;
+    margin: 0 5px -2px 0;
+    display: inline-block;
+    background:white center center no-repeat;
+}
+.master:before {
+    background:url("image/patch-check.svg");
+}
+.repost:before {
+    background:url("image/download.svg");
+}
+.save:before {
+    background:url("image/heart.svg");
+}
+.repost, .save {
+    padding: 5px 10px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.repost:hover, .save:hover {
+    background-color:#eeeeee ;
+}
+.block-place-of-apartments_light {
+    display:none;
+}
+/*========================================   Block apartments  photo    ======================================== */
+.block-photo img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.block-photo img:hover {
+    opacity: 0.8;
+    transition: 1s;
+}
+.photo-col-1 {
+    flex: 0 1 50%;
+}
+.photo-col-1:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+    float: left;
+}
+.photo-col-1 img {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.photo-col-2, .photo-col-3 {
+    flex: 0 1 25%;
+}
+.photo-col-2 div, .photo-col-3 div {
+    width: 100%;
+    height: 50%;
+}
+.photo-col-2 div:before, .photo-col-3 div:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+    float: left;
+}
+.photo-col-3 div:nth-child(1) img {
+    border-top-right-radius: 15px;
+}
+.photo-col-3 div:nth-child(2) img {
+    border-bottom-right-radius: 15px;
+}
+/*=====================================   MINI Block apartments  photo    ===================================== */
+.mini-block-photo {
+    display: none;
+    position: relative;
+}
+.mini-block-photo div:before {
+    display: block;
+    content: '';
+    padding-bottom: 56.25%;
+}
+.mini-block-photo img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+/*=====================================   Fly-header    ===================================== */
+.block-fly-header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #dddddd;
+    z-index: 99;
+    margin-top: -80px;
+}
+.fly-header-content {
+    max-width: 1280px;
+    height: 80px;
+    margin: 0 auto;
+    padding: 0 80px;
+}
+.fly-header-photo, .fly-header-facilities, .fly-header-review, .fly-header-location{
+    margin-right:20px;
+    padding-top: 30px;
+    height: 80px;
+}
+.fly-header-photo:hover, .fly-header-facilities:hover, .fly-header-review:hover, .fly-header-location:hover  {
+    border-bottom: 4px solid black;
+    cursor: pointer;
+}
+/*=====================================   Block-description    ===================================== */
+.block-constant {
+    flex: 0 1 60%;
+}
+.block-fly {
+    flex: 0 1 40%;
+}
+/*=====================================   Constant-block-1    ===================================== */
+.constant-block-1_name {
+    font-size:26px;!important;
+    line-height:30px;!important;
+}
+.ava {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-image: url("Photo/ava.webp");
+    background-position:0 -15px ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.ava:after {
+    content:"";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    display:block;
+    bottom: 1px;
+right: -3px;
+    background: url("image/ava_emblem.svg") center center no-repeat;
+}
+/*=====================================   Constant-block-2    ===================================== */
+.const-b2-img {
+    width: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.const-b2-img div:before {
+    content:"";
+    width: 25px;
+    height: 25px;
+    display:block;
+    background:white center center no-repeat;
+}
+.const-b2-img div:nth-child(1):before {
+    background:url("image/house-door.svg");
+}
+.const-b2-img div:nth-child(2):before {
+    background:url("image/clipboard-data.svg");
+}
+.const-b2-img div:nth-child(3):before {
+    background:url("image/door-open.svg");
+}
+.const-b2-img div:nth-child(4):before {
+    background:url("image/geo-alt.svg");
+}
+.const-b2-info div:nth-child(odd) {
+    font-size:16px;!important;
+    line-height:20px;!important;
+    font-weight: 600;
+    margin:0 0 5px 0;
+}
+.const-b2-info div:nth-child(even) {
+    color: #717171;
+    margin:0 0 15px 0;
+}
+.const-b2-info-more {
+    display: inline-block;
+    margin: 0;
+    text-decoration: underline;
+    font-weight: 600;
+}
+/*=====================================   Constant-block-3    ===================================== */
+.const-b3-info{
+    max-width: 500px;
+    font-size: 16px;!important;
+    font-weight: 400;
+    line-height: 24px;!important;
+}
+.const-b3-btn {
+    border: 0;
+    background-color:white;
+    text-decoration: underline;
+    font-weight: 600;
+    font-size:16px;!important;
+    line-height:20px;!important;
+}
+.const-b3-info-1 div {
+    font-size: 16px;
+    line-height: 24px;
+}
+/*=====================================   Constant-block-4    ===================================== */
+.const-b4-menu {
+  width: 100%;
+    height: 100%;
+}
+.const-b4-box-1, .const-b4-box-2, .const-b4-box-3, .const-b4-box-4 {
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    width: 100%;
+    margin:5px ;
+}
+.const-b4-box-4 {
+    display: none;
+}
+.img-double-bed:before, .img-mattress:before, .img-bed:before  {
+    content:"";
+    width: 25px;
+    height: 25px;
+    display:block;
+}
+.img-double-bed:before {
+    background:url("image/double-bed.svg") white center center no-repeat;
+}
+.img-mattress:before {
+    background:url("image/mattress.svg") white center center no-repeat;
+}
+.img-bed:before {
+    background:url("image/bed.svg") white center center no-repeat;
+}
+.const-b4-btn-right, .const-b4-btn-left {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: block;
+    background-color:white;
+    cursor: pointer;
+    border: 0 solid #7f7f7f;
+    transition:0.3s;
+}
+.const-b4-bs-btn-r, .const-b4-bs-btn-l {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: calc(50% - 20px);
+    z-index: 999;
+    border-radius: 50%;
+    box-shadow: #dddddd 0 2px 3px;
+}
+.const-b4-bs-btn-r {
+    right:-10px;
+}
+.const-b4-bs-btn-l {
+    left:-10px;
+    display: none;
+}
+.const-b4-btn-right:active, .const-b4-btn-left:active {
+    box-shadow:inset 0 0 0 2px #e2e2e2;
+    border: 1px solid #7f7f7f;
+}
+.const-b4-btn-right:focus, .const-b4-btn-left:focus {
+    border: 1px solid #808080;
+}
+
+/*=====================================   Constant-block-5    ===================================== */
+.col-12 p, .col-md-6 p {
+    margin-left:37px;
+    font-size: 16px;
+    line-height: 20px;
+}
+.img-ocean:before, .img-sea:before, .img-beach:before, .img-kitchen:before, .img-wifi:before, .img-free-parking:before, .img-swimming-pool:before, .img-tv:before, .img-gas-sensor:before, .img-smoke-sensor:before {
+      content:"";
+      width: 25px;
+      height: 25px;
+      float: left;
+}
+.img-ocean:before {
+    background:url("image/ocean-sea.svg") white left center no-repeat;
+}
+.img-sea:before {
+    background:url("image/ocean-sea.svg") white left center no-repeat;
+}
+.img-beach:before {
+    background:url("image/beach.svg") white left center no-repeat;
+}
+.img-kitchen:before {
+    background:url("image/kitchen.svg") white left center no-repeat;
+}
+.img-wifi:before {
+    background:url("image/wifi.svg") white left center no-repeat;
+}
+.img-free-parking:before {
+    background:url("image/free-parking.svg") white left center no-repeat;
+}
+.img-swimming-pool:before {
+    background:url("image/swimming-pool.svg") white left center no-repeat;
+}
+.img-tv:before {
+    background:url("image/tv.svg") white left center no-repeat;
+}
+.img-gas-sensor:before {
+    background:url("image/gas-sensor.svg") white left center no-repeat;
+}
+
+.img-smoke-sensor:before {
+    background:url("image/smoke-sensor.svg") white left center no-repeat;
+}
+.const-b5-gas-sensor {
+    text-decoration: line-through;
+}
+.const-b5-smoke-sensor {
+    text-decoration: line-through;
+}
+.const-b5-btn {
+    border: 1px solid black;
+    padding: 15px 10px;
+    border-radius: 10px;
+    width: 240px;
+    text-align: center;
+    cursor: pointer;
+}
+.const-b5-btn:hover {
+    background-color: #f7f7f7;
+    text-decoration: underline;
+}
+/*=====================================   Constant-block-6-calendar    ===================================== */
+
+/*=====================================   FLY Block    ===================================== */
+.fly-block-content {
+    position: sticky;
+    top:120px;
+    float: right;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    box-shadow: 0 0 6px #d9d7d7;
+    max-width: 370px;
+    min-width: 205px;
+}
+/*=====================================   FLY Block-2    ===================================== */
+.fly-b2-check-in {
+    flex: 0 1 50%;
+    border:1px solid #b0b0b0;
+    padding:5px 0 7px 10px;
+    border-top-left-radius: 10px;
+}
+.fly-b2-departure {
+    flex: 0 1 calc(50% + 1px);
+    border:1px solid #b0b0b0;
+    padding:5px 0 7px 10px;
+    margin-left:-1px ;
+    border-top-right-radius: 10px;
+}
+.fly-b2-number-guests {
+    margin-top:-1px ;
+    border:1px solid #b0b0b0;
+    padding:5px 0 7px 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.fly-b2-number-guests .arrow-dawn {
+    margin: 10px 15px 0 0;!important;
+}
+/*=====================================   FLY Block-3    ===================================== */
+.fly-b3-name {
+  margin-left: 11px;
+}
+.fly-b3-order-box-1 {
+    border: 1px solid #b0b0b0;
+    padding:10px 0 7px 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.fly-b3-order-box-2 {
+    border: 1px solid #b0b0b0;
+    padding:10px 0 7px 10px;
+    margin-top: -1px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.fly-b3-order-cancellation label {
+    flex: 0 1 80%;
+}
+.fly-b3-order-cancellation input {
+    flex: 0 1 20%;
+    margin:3px 0 0 0 ;
+}
+.fly-b3-order-box-2 div:nth-child(2) p {
+    flex: 0 1 80%;
+}
+/*=====================================   FLY Block-4    ===================================== */
+.fly-b4-btn-booking {
+    height:48px ;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 14px;
+    color: white;
+    cursor: pointer;
+    background: linear-gradient(45deg, #fa3359, #bd1e59);
+}
+.fly-b4-info-open, .fly-b4-info-closed {
+    display: inline-block;
+    max-height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.fly-b4-info-open .arrow-dawn, .fly-b4-info-closed .arrow-up {
+    margin-left:5px ;
+}
+.fly-b4-info-open:hover, .fly-b4-info-closed:hover {
+    background-color:#f7f7f7 ;
+}
+.fly-b4-money {
+display: none;
+}
+.fly-b4-support-service {
+    position: absolute;
+    bottom: -40px;
+
+    cursor: pointer;
+}
+.fly-b4-support-service:before {
+    content:"";
+    width: 25px;
+    height: 25px;
+    display:block;
+    float: left;
+    margin-right: 15px;
+    background:url("image/flag-fill.svg") center center no-repeat;
+}
+/*=====================================   Footer    ===================================== */
+footer {
+    width: 100%;
+    position: relative;
+    background-color: #f7f7f7;
+}
+.footer-block-1, .footer-block-2 {
+    width: 100%;
+    border-top: 1px solid #dddddd;
+    position: relative;
+}
+.footer-block-1-1, .footer-block-2-1, .footer-block-3{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 80px;
+}
+.footer-block-3 {
+    border-top: 1px solid #dddddd;
+}
+.footer-block-3 .dot:before {
+    margin: 0 5px -2px 5px;
+}
+.footer-b3-btn:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
