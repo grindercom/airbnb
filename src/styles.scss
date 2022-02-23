@@ -1,6 +1,10 @@
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-@import "src/assets/Scss/Mixin__styles";
-@import "src/assets/Scss/Сommon__styles";
+//@import "../src/assets/Scss/Mixin__styles";
+//@import "../src/app/header/header.component";
+////@import "../src/assets/Scss/Сommon__styles";
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -11,22 +15,6 @@
   color: #222222;
   /*outline: solid 1px #eee;*/
 }
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1050px,
-  xxl: 1400px
-);
-
-$container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1050px,
-  xxl: 1320px
-);
 
 
 

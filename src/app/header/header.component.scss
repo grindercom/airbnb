@@ -1,4 +1,4 @@
-@import "src/assets/Scss/Mixin__styles";
+@import "Mixin__styles";
 .header {
   width: 100%;
   height:5.75rem ;
@@ -134,5 +134,5 @@
     background:$bc_color url("../../assets/Image/heart.svg")center center no-repeat;
   }
 }
-@import "src/assets/Scss/Media__breakpoints";
+//@import "../../assets/Scss/Media__breakpoints";
 

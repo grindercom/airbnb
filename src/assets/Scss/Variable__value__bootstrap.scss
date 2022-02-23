@@ -1,0 +1,23 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+// 2. Включите сюда любые переопределения переменных по умолчанию
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1100px,
+  xxl: 1400px
+);
+// 3. Включите оставшуюся часть необходимых таблиц стилей Bootstrap
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/root";
+// 4. Включите любой необязательный Bootstrap CSS по мере необходимости
+@import "../../../node_modules/bootstrap/scss/utilities";
+@import "../../../node_modules/bootstrap/scss/reboot";
+@import "../../../node_modules/bootstrap/scss/type";
+@import "../../../node_modules/bootstrap/scss/images";
+@import "../../../node_modules/bootstrap/scss/containers";
+@import "../../../node_modules/bootstrap/scss/grid";
+@import "../../../node_modules/bootstrap/scss/helpers";
+
