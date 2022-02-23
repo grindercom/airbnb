@@ -1,4 +1,4 @@
-@import "src/assets/Scss/Mixin__styles";
+@import "mixin_style";
 
 $grid-breakpoints: (
   xs: 0,
@@ -112,4 +112,4 @@ footer div[class|="col"] {
    background:url("../../assets/Image/Footer/instagram.svg") center center no-repeat;
  }
 }
-@import "src/assets/Scss/Media__breakpoints";
+@import "media_breakpoint";
