@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "a97f7c10-c783-4632-85d6-fb3f57451ae6"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -14,11 +17,6 @@
         }
       },
       "root": "",
-      "stylePreprocessorOptions": {
-        "includePaths": [
-          ".src/assets/Scss"
-        ]
-      },
       "sourceRoot": "src",
       "prefix": "app",
       "architect": {
@@ -38,6 +36,11 @@
             "styles": [
               "src/styles.scss"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/assets/Scss"
+              ]
+            },
             "scripts": []
           },
           "configurations": {
