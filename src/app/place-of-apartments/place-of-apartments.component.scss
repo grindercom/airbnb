@@ -1,30 +1,63 @@
 @import "mixin_style";
 
-.master:before, .repost:before, .save:before  {
-  content:"";
-  width: 13px;
-  height: 13px;
-  margin: 0 5px -2px 0;
-  display: inline-block;
-  background:white center center no-repeat;
-}
+//.master:before, .repost:before, .save:before  {
+//  content:"";
+//  width: 13px;
+//  height: 13px;
+//  margin: 0 5px -2px 0;
+//  display: inline-block;
+//  background:center center no-repeat;
+//}
 //.master:before {
 //  background:url("image/patch-check.svg");
 //}
 //.repost:before {
-//  background:url("image/download.svg");
+//  @include img_before(0,0,0,1rem,1rem);
+//  background:url("../../assets/Image/repost.svg") center  no-repeat;
 //}
-//.save:before {
-//  background:url("image/heart.svg");
-//}
-.repost, .save {
+.star {
+  &:before {
+    @include img_before(0,0,0 0.3rem -0.05rem 0 ,12px,12px);
+    background: url("../../assets/Image/star.svg") center center no-repeat;
+  }
+}
+.master {
+  color:$text_color;
+  &:before {
+    @include img_before(0,0,0 0.3rem -0.05rem 0 ,12px,12px);
+    background: url("../../assets/Image/patch-check.svg") center center no-repeat;
+  }
+}
+.btn_repost {
+  border: none;
+  margin:0 1rem 0 0;
+  background-color:white;
   padding: 5px 10px;
   border-radius: 7px;
   cursor: pointer;
+  &:before {
+    @include img_before(0,0,0 0.3rem -0.3rem 0 ,16px,16px);
+    background: url("../../assets/Image/repost.svg") center center no-repeat;
+  }
+  &:hover {
+    background-color: $bc_color;
+  }
 }
-.repost:hover, .save:hover {
-  background-color:#eeeeee ;
+.btn_save {
+  border: none;
+  background-color:white;
+  padding: 5px 10px;
+  border-radius: 7px;
+  cursor: pointer;
+  &:before {
+    @include img_before(0,0,0 0.3rem -0.3rem 0 ,16px,16px);
+    background: url("../../assets/Image/heart.svg") center center no-repeat;
+  }
+  &:hover {
+    background-color: $bc_color;
+  }
 }
+
 .block-place-of-apartments_light {
-  display:none;
+  display: none;
 }

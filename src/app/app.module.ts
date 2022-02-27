@@ -6,6 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { PhotoBlockComponent } from './photo-block/photo-block.component';
 import { PlaceOfApartmentsComponent } from './place-of-apartments/place-of-apartments.component';
+import { BodyPhotoComponent } from './body-photo/body-photo.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { PlaceOfApartmentsComponent } from './place-of-apartments/place-of-apart
     HeaderComponent,
     FooterComponent,
     PhotoBlockComponent,
-    PlaceOfApartmentsComponent
+    PlaceOfApartmentsComponent,
+    BodyPhotoComponent
   ],
   imports: [
     BrowserModule

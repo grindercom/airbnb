@@ -1,115 +1,113 @@
 @import "mixin_style";
 
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1000px,
-  xxl: 1400px
-);
-
-$container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1000px,
-  xxl: 1320px
-);
-
 footer {
   width: 100%;
   position: relative;
   border-top: 1px solid #dddddd;
   background-color: #f7f7f7;
 }
-.footer {
-  width: 100%;
-  max-width: 90rem;
-  margin: 0 auto;
-  position: relative;
-  padding: 0 5.75rem;
-}
+
 footer div[class|="col"] {
   cursor: pointer;
 }
+
 .footer__block_1 {
   .row p {
-  color: #b0b0b0;
+    color: $text_color;
     font-size: 16px;
-    line-height:18px;
+    line-height: 18px;
   }
 }
-.footer__b1_breadcrumb{
+
+.footer__b1_breadcrumb {
   div {
     flex-grow: 0;
   }
+
   .col p {
     color: black;
     font-size: 14px;
     white-space: nowrap;
   }
+
   p:hover {
     text-decoration: underline;
   }
 }
+
 .arrow-right:after {
-  @include img_before(0,0,0 , 0.6rem,0.6rem);
-  background:url("../../assets/Image/arrow-right.svg") center center no-repeat;
+  @include img_before(0, 0, 0, 0.6rem, 0.6rem);
+  background: url("../../assets/Image/arrow-right.svg") center center no-repeat;
 }
+
 .footer__block_3 {
   border-top: 1px solid $br_color;
+
   div {
     flex-grow: 0;
   }
+
   p {
     white-space: nowrap;
   }
 }
+
 .footer__b3_btn {
-  &:hover{
-  text-decoration: underline;
+  &:hover {
+    text-decoration: underline;
   }
 }
+
 .footer__b3_language {
   text-decoration: underline;
   cursor: pointer;
+
   &:before {
     float: left;
-    @include img_before(0,0,0 0.3rem 0  0,1.6rem,1.6rem);
-    background:url("../../assets/Image/globe.svg") center center no-repeat;
+    @include img_before(0, 0, 0 0.3rem 0 0, 1.6rem, 1.6rem);
+    background: url("../../assets/Image/globe.svg") center center no-repeat;
   }
 }
+
 .footer__b3_currency {
   text-decoration: underline;
   cursor: pointer;
 }
+
 .footer__b3_facebook {
   cursor: pointer;
+
   &:before {
-    @include img_before(0,0,0 0.3rem 0 0.3rem,1.2rem,1.2rem);
-    background:url("../../assets/Image/Footer/Facebook.svg") center center no-repeat;
+    @include img_before(0, 0, 0 0.3rem 0 0.3rem, 1.2rem, 1.2rem);
+    background: url("../../assets/Image/Footer/Facebook.svg") center center no-repeat;
   }
 }
+
 .footer__b3_vk {
   cursor: pointer;
+
   &:before {
-    @include img_before(0,0,0 0.3rem 0 0.3rem,1.5rem,1.5rem);
-    background:url("../../assets/Image/Footer/vk.svg") center center no-repeat;
+    @include img_before(0, 0, 0 0.3rem 0 0.3rem, 1.5rem, 1.5rem);
+    background: url("../../assets/Image/Footer/vk.svg") center center no-repeat;
   }
 }
+
 .footer__b3_twitter {
   cursor: pointer;
+
   &:before {
-    @include img_before(0,0,0 0.3rem 0 0.3rem,1.5rem,1.5rem);
-    background:url("../../assets/Image/Footer/twitter.svg") center center no-repeat;
+    @include img_before(0, 0, 0 0.3rem 0 0.3rem, 1.5rem, 1.5rem);
+    background: url("../../assets/Image/Footer/twitter.svg") center center no-repeat;
   }
 }
+
 .footer__b3_instagram {
   cursor: pointer;
+
   &:before {
-  @include img_before(0,0,0 0.3rem 0 0.3rem,1.3rem,1.3rem);
-   background:url("../../assets/Image/Footer/instagram.svg") center center no-repeat;
- }
+    @include img_before(0, 0, 0 0.3rem 0 0.3rem, 1.3rem, 1.3rem);
+    background: url("../../assets/Image/Footer/instagram.svg") center center no-repeat;
+  }
 }
+
 @import "media_breakpoint";
