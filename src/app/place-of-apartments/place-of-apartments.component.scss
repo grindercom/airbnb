@@ -1,25 +1,18 @@
 @import "mixin_style";
 
-//.master:before, .repost:before, .save:before  {
-//  content:"";
-//  width: 13px;
-//  height: 13px;
-//  margin: 0 5px -2px 0;
-//  display: inline-block;
-//  background:center center no-repeat;
-//}
-//.master:before {
-//  background:url("image/patch-check.svg");
-//}
-//.repost:before {
-//  @include img_before(0,0,0,1rem,1rem);
-//  background:url("../../assets/Image/repost.svg") center  no-repeat;
-//}
 .star {
+  font-weight:600;
   &:before {
     @include img_before(0,0,0 0.3rem -0.05rem 0 ,12px,12px);
     background: url("../../assets/Image/star.svg") center center no-repeat;
   }
+}
+.reviews {
+  font-weight:600;
+  background: white;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
 }
 .master {
   color:$text_color;
@@ -27,6 +20,14 @@
     @include img_before(0,0,0 0.3rem -0.05rem 0 ,12px,12px);
     background: url("../../assets/Image/patch-check.svg") center center no-repeat;
   }
+}
+.location {
+  color:$text_color;
+  font-weight:600;
+  background: white;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
 }
 .btn_repost {
   border: none;
@@ -36,7 +37,7 @@
   border-radius: 7px;
   cursor: pointer;
   &:before {
-    @include img_before(0,0,0 0.3rem -0.3rem 0 ,16px,16px);
+    @include img_before(0,0,0 0.3rem -0.2rem 0 ,16px,16px);
     background: url("../../assets/Image/repost.svg") center center no-repeat;
   }
   &:hover {
